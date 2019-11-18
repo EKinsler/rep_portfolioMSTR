@@ -1,12 +1,11 @@
-html {
-    background-color: black;
+.wrapper {
+  display: grid;
+  grid-template-rows: 100px 400px 100px;
+  background-color: #fff;
+  color: #444;
 }
 
-body {
-    background-image: url("images/floor.png");
+.box {
+  background-color: #444;
+  color: #fff;
 }
-
-
-
-/*    background-image: url("images/floor.png");
-    background-repeat: repeat-x;*/
