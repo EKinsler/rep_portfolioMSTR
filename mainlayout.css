@@ -32,6 +32,8 @@ top: 0px;
 left: 0px;
 }
 
-
+.starlayer1, .starlayer2, .starlayer3 {
+    image-rendering: pixelated;
+}
 /*    background-image: url("images/floor.png");
     background-repeat: repeat-x;*/
