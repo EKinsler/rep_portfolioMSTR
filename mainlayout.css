@@ -1,6 +1,5 @@
 html {
     background-color: black;
-    
 }
 
 body {
@@ -12,6 +11,26 @@ body, html {
     padding: 0;
 }
 
+.starlayer1 {
+z-index: 1;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+.starlayer2 {
+z-index: 2;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+.starlayer3 {
+z-index: 3;
+position: absolute;
+top: 0px;
+left: 0px;
+}
 
 
 /*    background-image: url("images/floor.png");
