@@ -33,6 +33,10 @@ body,html{
   transform: translateZ(-3px) scale(4);
 }
 
+.speed-3 {
+  transform: translateZ(-5px) scale(5);
+}
+
 .object {
   margin-left: 250px;
   height: 100px;
