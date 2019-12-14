@@ -82,15 +82,15 @@ img {
 
 .introduction {
   position: absolute;
-  top: 50px;
-  left: 80px;
+  top: 100px;
+  left: 100px;
   background-color: rgba(255, 255, 255, 0);
   font-family: "mnstr-friend";
   color: white;
   font-size: 80px;
   z-index: 25;
   height: 100px; 
-  width: 600px;
+  width: 1000px;
   transform: skewY(300px);
   transition: 0.25s;
 }
