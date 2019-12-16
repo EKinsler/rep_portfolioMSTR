@@ -1,11 +1,15 @@
 
 @font-face {
-  font-family: "dtm";
+  font-family: "dtm_sans";
   src: url("fonts/DTM-Sans.otf");
 }
 @font-face {
   font-family: "mnstr-friend";
   src: url("fonts/MonsterFriendFore.otf");
+}
+@font-face {
+  font-family: "dtm_mono";
+  src: url("fonts/DTM-Mono.otf");
 }
 
 
@@ -91,10 +95,17 @@ img {
   z-index: 25;
   height: 100px; 
   width: 1000px;
-  animation: intro 0.25s;
+  animation: intro 5s forwards;
 }
 
 @keyframes intro {
   0% {top: 100px; left: 5000px;}
-  100% {top: 100px; left: 100px;}
+  5% {top: 100px; left: 100px;}
+  100% {color: black; animation-play-state: paused;}
+}
+
+@keyframes desc1 {
+  0% {top: 280px; left: 5000px;}
+  5% {top: 280px; left: 100px;}
+  100% {color: black; animation-play-state: paused;}
 }
