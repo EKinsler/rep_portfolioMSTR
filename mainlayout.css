@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "dtm_sans";
   src: url("fonts/DTM-Sans.otf");
@@ -17,6 +16,11 @@ body,html{
     margin: 0;
     padding: 0;
     background-color: black;
+}
+
+body {
+  zoom: 125%;
+  overflow: hidden;
 }
 
 .parallax {
@@ -101,11 +105,11 @@ img {
 @keyframes intro {
   0% {top: 100px; left: 5000px;}
   5% {top: 100px; left: 100px;}
-  100% {color: black; animation-play-state: paused;}
+  100% {color: rgba(255, 255, 255, 0); animation-play-state: paused;}
 }
 
 @keyframes desc1 {
   0% {top: 280px; left: 5000px;}
   5% {top: 280px; left: 100px;}
-  100% {color: black; animation-play-state: paused;}
+  100% {color: rgba(255, 255, 255, 0); animation-play-state: paused;}
 }
