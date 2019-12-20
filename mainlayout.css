@@ -102,6 +102,14 @@ img {
   animation: intro 5s forwards;
 }
 
+iframe {
+  width: 400px;
+  height: 575px;
+  position: relative;
+  background-color: black;
+  border: 10px solid white; 
+}
+
 @keyframes intro {
   0% {top: 100px; left: 5000px;}
   5% {top: 100px; left: 100px;}
@@ -112,4 +120,14 @@ img {
   0% {top: 280px; left: 5000px;}
   5% {top: 280px; left: 100px;}
   100% {color: rgba(255, 255, 255, 0); animation-play-state: paused;}
+}
+
+@keyframes reveal1 {
+  0%{ bottom: 5000px; left: 500px;}
+  100%{ bottom: 400px; left: 500px;}
+}
+
+@keyframes reveal2 {
+  0%{ bottom: 5000px; right: 300px;}
+  100%{ bottom: 0px;  right: 300px;}
 }
