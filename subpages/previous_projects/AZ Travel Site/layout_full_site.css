@@ -1,0 +1,26 @@
+.span {
+    align-self: center;
+    z-index: 3;
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+    background-color: rgba(83, 184, 179, 7.5);
+    width: 66%;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#top {
+    z-index: 1;
+    position: absolute;
+    left: 450px;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgba(255, 255, 255, .5);
+    font-size:120px;
+    text-align: center;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}

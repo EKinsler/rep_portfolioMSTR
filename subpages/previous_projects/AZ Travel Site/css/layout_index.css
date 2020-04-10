@@ -1,0 +1,66 @@
+
+img {
+float: right;
+}
+
+.span {
+    align-self: center;
+    z-index: 3;
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+    width: 60%;
+    border-radius: 45px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#top {
+    z-index: 1;
+    position: absolute;
+    left: 450px;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgba(255, 255, 255, .5);
+    font-size:120px;
+    text-align: center;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.479);
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 190px;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+}
+
+.button:hover {
+    background-color: rgba(92, 92, 92, 0.479);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    text-indent: 2.5em;
+}

@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    margin: 40px;
+}
+
+.wrapper {
+        display: grid;
+        position: relative;
+        left: 100px;
+        top: 50px;
+        grid-template-columns: 270px 270px 270px 270px 270px 270px ;
+        grid-template-rows: 200px 100px 100px 100px 100px 50px;
+        grid-gap: 10px;
+        background-color: black;
+        color: white;
+}
+      
+.box {
+        background-color: black;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        outline: 5px solid yellow;
+}
+
+.box.a {
+    grid-row-start: 1; 
+    grid-row-end: 2;
+    grid-column-start: 1; 
+    grid-column-end: 2;
+}
+
+.box.b {
+    grid-row-start: 1; 
+    grid-row-end: 2;
+    grid-column-start: 2; 
+    grid-column-end: 5;
+}
+.box.c {
+    overflow: scroll;
+    grid-row-start: 2; 
+    grid-row-end: 5;
+    grid-column-start: 1; 
+    grid-column-end: 5;
+}
+.box.d {
+    grid-row-start: 1; 
+    grid-row-end: 5;
+    grid-column-start: 5; 
+    grid-column-end: 5;
+}
+
+.box.e {
+    grid-row-start: 5; 
+    grid-row-end: 6;
+    grid-column-start: 1; 
+    grid-column-end: 6;
+    outline: none;
+}
+
+.box.a > img{
+    position: absolute;
+    left: 45px;
+}
+
+.box.b > img{
+    position: absolute;
+    left: 320px;
+    top: 48px;
+}
+
+.list {
+    float: right;
+}
+
+.box.c > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.footer {
+    color: white;
+}

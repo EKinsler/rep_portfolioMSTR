@@ -17,6 +17,11 @@
             src: url("../fonts/DTM-Mono.otf");
         }
 
+        @keyframes choose {
+            0% {background-color: black; color: white;}
+            100% {background-color: white; color: black;}
+        }
+
         .window {
             width: 400px;
             height: 630px;
@@ -43,42 +48,47 @@
             list-style-image: url("../images/bullet.png")        
         }
 
-        .rating {
-            width: 150px;
-            length: 20px;
-            font-family: 'dtm_mono';
-            font-size: 10px;
+        table {
+            position: relative;
+            left: 40px;
+            width: 320px;
+            border: 2px solid white;
         }
 
+        .title {
+            font-family: 'dtm_mono';
+            font-size: 20px;
+            height: 30px;
+            padding: 20px;
+        }
+
+        td:hover {
+            animation: choose 0.25s forwards;
+            cursor: pointer;
+        }
     </style>
 
     </head>
     <body>
     <div class="window">
-        <p style="font-family: dtm_mono; color: yellow; font-size: 50px;">Occupations</a>
-<ul style="font-size: 30px;">
-    <li style="text-align: left; font-family: dtm_mono; font-size: 25px;">Video Game Developer</li>
-    <div class="rating">
-        <img src="../images/int.png" style="position: absolute; top: 190px; left: 90px;">
-
-    </div>
-    <br>
-    <br>
-    <br>
-    <li style="text-align: left; font-family: dtm_mono; font-size: 25px;">Web Designer</li>
-    <div class="rating">
-         <img src="../images/adv.png" style="position: absolute; top: 330px; left: 90px;">
-    </div>
-    <br>
-    <br>
-    <br>
-    <li style="text-align: left; font-family: dtm_mono; font-size: 25px;">Music Producer</li>
-    <div class="rating">
-         <img src="../images/beg.png" style="position: absolute; top: 460px; left: 90px;">
-    </div>
-
-</ul>  
-<br>
+        <p style="font-family: dtm_mono; color: yellow; font-size: 40px; ">Previous Projects</a>
+    <table border="1">
+        <tr>
+            <td class="title">AZ Travel Site</td>
+        </tr>
+        <tr>
+            <td class="title">Childhood Toy Site</td>
+        </tr>
+        <tr>
+            <td class="title">Hobby Page</td>
+        </tr>
+        <tr>
+            <td class="title">Maze Project</td>
+        </tr>
+        <tr>
+            <td class="title">West-MEC Coding Program Site</td>
+        </tr>
+    </table>
 </div>          
 </body>
 </html>

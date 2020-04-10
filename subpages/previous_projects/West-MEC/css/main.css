@@ -1,0 +1,114 @@
+
+    html {
+        background-color: rgb(200, 200, 200);
+    }
+    body {
+        margin: 40px;
+        background-color: rgb(200, 200, 200);
+    }
+  
+    .wrapper {
+        display: grid;
+        align-self: center;
+        grid-template-columns: 256px 512px 256px;
+        grid-template-rows: 75px 310px 75px 50px 50px;
+        grid-gap: 10px;
+        background-color: rgb(255, 115, 0);
+        color: rgb(253, 114, 0);
+        position: absolute;
+        top: 200px;
+    }
+  
+    .box {
+        background-color: rgb(238, 107, 0);
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+    .button, .apply {
+        background-color: rgb(238, 107, 0);
+        border: solid 2px white;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+        width: 200px;
+    }
+
+    .button:hover {
+        background-color: white;
+        color: rgb(238, 107, 0);
+    }
+
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    .box.a {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        font-size: 125%;
+        overflow-y: scroll;
+        
+    }
+
+    .box.b {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+    }
+
+    .box.d {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+
+    .box.e {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .apply:hover {
+        background-color: rgb(73, 73, 73);
+        color: rgb(238, 107, 0);
+    }
+}    
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        display: grid;
+        align-self: center;
+        grid-template-columns: 253px 253px 253px;
+        grid-template-rows: 100px 600px 100px;
+        grid-gap: 10px;
+        background-color: rgb(255, 115, 0);
+        color: rgb(253, 114, 0);
+    }
+
+    .box.a {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .box.e {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+}
