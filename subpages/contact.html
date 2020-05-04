@@ -28,19 +28,54 @@
             position: absolute;
             top: 10px;
             left: 10px;
+            overflow: auto;
         }
 
-        li:nth-of-type(1) {
-            list-style-image: url("../images/bullet.png")        
+        p {
+            font-family: dtm_mono;
+            color: white;
+            font-size: 50px;
         }
-        li:nth-of-type(2) {
-            list-style-image: url("../images/bullet.png")        
+
+        h1 {
+            font-family: dtm_mono;
+            color: yellow;
+            font-size: 50px;
         }
-        li:nth-of-type(3) {
-            list-style-image: url("../images/bullet.png")        
+
+        label {
+            text-align: left;
+            font-family: dtm_mono;
+            font-size: 25px;
         }
-        li:nth-of-type(4) {
-            list-style-image: url("../images/bullet.png")        
+
+        input {
+            background-color: black;
+            color: white;
+            font-family: 'dtm-mono';
+        }
+
+        #fname {
+            width: 100px;
+            height: 25px;
+            text-align: center;
+        }
+
+        #email {
+            width: 190px;
+            height: 25px;
+            text-align: center;
+        }
+
+        #message {
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            overflow-wrap: break-word;
+            background-color: black;
+            color: white;
+            font-family: 'dtm-mono';
+
         }
 
     </style>
@@ -48,13 +83,14 @@
     </head>
     <body>
     <div class="window">
-        <p style="font-family: dtm_mono; color: yellow; font-size: 50px;">Prior Experiences</a>
-<ul style="font-size: 30px;">
-    <li style="text-align: left; font-family: dtm_mono; font-size: 25px;"><a href="https://www.arizonabouncearound.com/index.html" style="color: rgb(70, 122, 73);"> Arizona Bounce Around </a> Assistant </li>
-    <p style="font-size: 12px; text-align: left; font-family: dtm_mono; margin-right: 30px;">For 3 years I have worked at a party rental equipment company called <a href="https://www.arizonabouncearound.com/index.html" style="color: rgb(70, 122, 73);">The Arizona Bounce Around.</a>If there is a Fundraiser, Family Event, Team Buildiung event, Corperate Event, Church Party or even a single birthday party on the agenda, this company has the cleanest carnival material in the state ready for rent, delivery and setup right on their website. It is also the owner of the country's largest inflatable water slide. </p>
-    </div>
-</ul>  
-<br>
+        <h1>Contact Me</h1>
+    <form style="font-size: 30px;">
+        <input type="text" id="fname" name="fname" placeholder="Name">
+        <input type="text" id="email" name="email" placeholder="Your Email"><br><br>
+        <textarea type="text" id="message" name="message" placeholder="Message"></textarea><br>
+        <input type="submit" value="Click here or press Enter to SEND">
+
+    </form>  
 </div>          
 </body>
 </html>
