@@ -148,9 +148,19 @@ img {
   100% {bottom: 110px; left: 2550px; display: block;}
 }
 
+@keyframes reveal6 {
+  0%   {bottom: 5000px; left: 3050px; display: none;}
+  100% {bottom: 110px; left: 3050px; display: block;}
+}
+
+@keyframes reveal7 {
+  0%   {bottom: 5000px; left: 3550px; display: none;}
+  100% {bottom: 110px; left: 3550px; display: block;}
+}
+
 
 iframe {
-  width: 400px;
+  width: 384px;
   height: 600px;
   background-color: black;
   border: 10px white solid;
