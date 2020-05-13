@@ -1,15 +1,225 @@
+/*/ PHONES /*/
+@media only screen and (max-width: 823px){
+  /*      CUSTOM FONTS        */
 @font-face {
   font-family: "dtm_sans";
   src: url("fonts/DTM-Sans.otf");
 }
+
 @font-face {
   font-family: "mnstr-friend";
   src: url("fonts/MonsterFriendFore.otf");
 }
+
 @font-face {
   font-family: "dtm_mono";
   src: url("fonts/DTM-Mono.otf");
 }
+
+/*    ANIMAITON    */
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body {
+  zoom: 115%;
+  overflow: hidden;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.object-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: none;
+  justify-content: center;
+  display: none;
+  visibility: hidden;
+}
+
+.object {
+  margin-left: 0px;
+  height: 100px;
+  width: 300px;
+}
+
+.object-3 {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: none;
+  visibility: hidden;
+}
+
+img {
+  image-rendering: pixelated;
+  display: none;
+}
+
+.page-content {
+  height: 1000px;
+  width: 100%;
+}
+
+.introduction {
+  position: absolute;
+  top: 20px; left: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "mnstr-friend";
+  color: white;
+  font-size: 4em;
+  z-index: 25;
+  height: 2em; width: 100%;
+  animation: intro 5s forwards;
+}
+
+.introduction2 {
+  position: absolute;
+  top: 200px; left: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "dtm_mono";
+  color: white;
+  font-size: 1em;
+  z-index: 25;
+  height: 100px; width: 100%;
+  animation: desc1 5s forwards;
+}
+
+iframe {
+  width: 30em;
+  height: 600px;
+  background-color: black;
+  border: 10px white solid;
+  position: absolute;
+}
+
+#subPage1 {
+  position: absolute;
+  top: 300px; left: 8%;
+  width: 23em;
+}
+
+#subPage2 {
+  position: absolute;
+  top: 900px; left: 8%;
+  width: 23em;
+}
+
+#subPage3 {
+  position: absolute;
+  top: 1500px; left: 8%;
+  width: 23em;
+}
+
+#subPage4 {
+  position: absolute;
+  top: 2100px; left: 8%;
+  width: 23em;
+}
+
+#subPage5 {
+  position: absolute;
+  top: 2700px; left: 8%;
+  width: 23em;
+}
+
+#subPage6 {
+  position: absolute;
+  top: 3300px; left: 8%;
+  width: 23em;
+}
+
+#subPage7 {
+  position: absolute;
+  top: 3900px; left: 8%;
+  width: 23em;
+}
+}
+
+/*/ TABLETS /*/
+@media only screen and (min-width: 824px) and (max-width: 1024px){
+  /*      CUSTOM FONTS        */
+@font-face {
+  font-family: "dtm_sans";
+  src: url("fonts/DTM-Sans.otf");
+}
+
+@font-face {
+  font-family: "mnstr-friend";
+  src: url("fonts/MonsterFriendFore.otf");
+}
+
+@font-face {
+  font-family: "dtm_mono";
+  src: url("fonts/DTM-Mono.otf");
+}
+
+/*      ANIMATION        */
+@keyframes intro {
+  0% {top: 100px; left: 5000px;}
+  5% {top: 100px; left: 100px;}
+  100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
+}
+
+@keyframes desc1 {
+  0% {top: 280px; left: 5000px;}
+  5% {top: 280px; left: 100px;}
+  100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
+}
+
+@keyframes reveal1 {
+  0%   {bottom: 5000px; left: 50px; display: block;}
+  100% {bottom: 175px; left: 50px; display: block;}
+}
+
+@keyframes reveal2 {
+  0%   {bottom: 5000px; left: 550px; display: none;}
+  100% {bottom: 175px; left: 550px; display: block;}
+}
+
+@keyframes reveal3 {
+  0%   {bottom: 5000px; left: 1550px; display: none;}
+  100% {bottom: 175px; left: 1550px; display: block;}
+}
+
+@keyframes reveal4 {
+  0%   {bottom: 5000px; left: 2050px; display: none;}
+  100% {bottom: 175px; left: 2050px; display: block;}
+}
+
+@keyframes reveal5 {
+  0%   {bottom: 5000px; left: 2550px; display: none;}
+  100% {bottom: 175px; left: 2550px; display: block;}
+}
+
+@keyframes reveal6 {
+  0%   {bottom: 5000px; left: 3050px; display: none;}
+  100% {bottom: 175px; left: 3050px; display: block;}
+}
+
+@keyframes reveal7 {
+  0%   {bottom: 5000px; left: 3550px; display: none;}
+  100% {bottom: 175px; left: 3550px; display: block;}
+}
+
+/*    ANIMAITON    */
+#subPage1 {animation: reveal1 1s forwards; animation-delay: 3s;}
+#subPage2 {animation: reveal2 1s forwards; animation-delay: 3.5s;}
+#subPage3 {animation: reveal3 1s forwards; animation-delay: 5.5s;}
+#subPage4 {animation: reveal4 1s forwards; animation-delay: 6.5s;}
+#subPage5 {animation: reveal5 1s forwards; animation-delay: 7.5s;}
+#subPage6 {animation: reveal6 1s forwards; animation-delay: 8.5s;}
+#subPage7 {animation: reveal7 1s forwards; animation-delay: 9.5s;}
+
 
 body,html{
     margin: 0;
@@ -18,7 +228,7 @@ body,html{
 }
 
 body {
-  zoom: 110%;
+  zoom: 115%;
   overflow: hidden;
 }
 
@@ -81,17 +291,17 @@ img {
 }
 
 .page-content {
-  height: 6000px;
-  width: 6000px;
+  height: 937px;
+  width: 1000px;
 }
 
 .introduction {
   position: absolute;
-  top: 100px; left: 100px;
+  top: 150px; left: 100px;
   background-color: rgba(255, 255, 255, 0);
   font-family: "mnstr-friend";
   color: white;
-  font-size: 80px;
+  font-size: 65px;
   z-index: 25;
   height: 100px; width: 1000px;
   animation: intro 5s forwards;
@@ -103,7 +313,7 @@ img {
   background-color: rgba(255, 255, 255, 0);
   font-family: "dtm_mono";
   color: white;
-  font-size: 30px;
+  font-size: 18px;
   z-index: 25;
   height: 100px; width: 1000px;
   animation: desc1 5s forwards;
@@ -111,8 +321,8 @@ img {
 
 
 @keyframes intro {
-  0% {top: 100px; left: 5000px;}
-  5% {top: 100px; left: 100px;}
+  0% {top: 150px; left: 5000px;}
+  5% {top: 150px; left: 100px;}
   100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
 }
 
@@ -123,41 +333,6 @@ img {
 }
 
 
-@keyframes reveal1 {
-  0%   {bottom: 5000px; left: 50px; display: block;}
-  100% {bottom: 110px; left: 50px; display: block;}
-}
-
-@keyframes reveal2 {
-  0%   {bottom: 5000px; left: 550px; display: none;}
-  100% {bottom: 110px; left: 550px; display: block;}
-}
-
-@keyframes reveal3 {
-  0%   {bottom: 5000px; left: 1550px; display: none;}
-  100% {bottom: 110px; left: 1550px; display: block;}
-}
-
-@keyframes reveal4 {
-  0%   {bottom: 5000px; left: 2050px; display: none;}
-  100% {bottom: 110px; left: 2050px; display: block;}
-}
-
-@keyframes reveal5 {
-  0%   {bottom: 5000px; left: 2550px; display: none;}
-  100% {bottom: 110px; left: 2550px; display: block;}
-}
-
-@keyframes reveal6 {
-  0%   {bottom: 5000px; left: 3050px; display: none;}
-  100% {bottom: 110px; left: 3050px; display: block;}
-}
-
-@keyframes reveal7 {
-  0%   {bottom: 5000px; left: 3550px; display: none;}
-  100% {bottom: 110px; left: 3550px; display: block;}
-}
-
 
 iframe {
   width: 384px;
@@ -165,4 +340,203 @@ iframe {
   background-color: black;
   border: 10px white solid;
   position: absolute;
+}
+}
+
+/*/ LAPTOPS AND LARGER RES. /*/
+@media only screen and (min-width: 1025px) {
+  @font-face {
+    font-family: "dtm_sans";
+    src: url("fonts/DTM-Sans.otf");
+  }
+  
+  @font-face {
+    font-family: "mnstr-friend";
+    src: url("fonts/MonsterFriendFore.otf");
+  }
+  
+  @font-face {
+    font-family: "dtm_mono";
+    src: url("fonts/DTM-Mono.otf");
+  }
+  
+  /*      ANIMATION        */
+  @keyframes intro {
+    0% {top: 100px; left: 5000px;}
+    5% {top: 100px; left: 100px;}
+    100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
+  }
+  
+  @keyframes desc1 {
+    0% {top: 280px; left: 5000px;}
+    5% {top: 280px; left: 100px;}
+    100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
+  }
+  
+  @keyframes reveal1 {
+    0%   {bottom: 5000px; left: 50px; display: block;}
+    100% {bottom: 120px; left: 50px; display: block;}
+  }
+  
+  @keyframes reveal2 {
+    0%   {bottom: 5000px; left: 550px; display: none;}
+    100% {bottom: 120px; left: 550px; display: block;}
+  }
+  
+  @keyframes reveal3 {
+    0%   {bottom: 5000px; left: 1550px; display: none;}
+    100% {bottom: 120px; left: 1550px; display: block;}
+  }
+  
+  @keyframes reveal4 {
+    0%   {bottom: 5000px; left: 2050px; display: none;}
+    100% {bottom: 120px; left: 2050px; display: block;}
+  }
+  
+  @keyframes reveal5 {
+    0%   {bottom: 5000px; left: 2550px; display: none;}
+    100% {bottom: 120px; left: 2550px; display: block;}
+  }
+  
+  @keyframes reveal6 {
+    0%   {bottom: 5000px; left: 3050px; display: none;}
+    100% {bottom: 120px; left: 3050px; display: block;}
+  }
+  
+  @keyframes reveal7 {
+    0%   {bottom: 5000px; left: 3550px; display: none;}
+    100% {bottom: 120px; left: 3550px; display: block;}
+  }
+  
+  /*    ANIMAITON    */
+  #subPage1 {animation: reveal1 1s forwards; animation-delay: 3s;}
+  #subPage2 {animation: reveal2 1s forwards; animation-delay: 3.5s;}
+  #subPage3 {animation: reveal3 1s forwards; animation-delay: 5.5s;}
+  #subPage4 {animation: reveal4 1s forwards; animation-delay: 6.5s;}
+  #subPage5 {animation: reveal5 1s forwards; animation-delay: 7.5s;}
+  #subPage6 {animation: reveal6 1s forwards; animation-delay: 8.5s;}
+  #subPage7 {animation: reveal7 1s forwards; animation-delay: 9.5s;}
+  
+  
+  body,html{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+  }
+  
+  body {
+    zoom: 115%;
+    overflow: hidden;
+  }
+  
+  .parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .object-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: none;
+    justify-content: center;
+  }
+  
+  .speed-1 {
+    transform: translateZ(-1px) scale(2);
+  }
+  
+  .speed-2 {
+    transform: translateZ(-2px) scale(3);
+  }
+  
+  .speed-3 {
+    transform: translateZ(-3px) scale(4);
+  }
+  
+  .speed-3 {
+    transform: translateZ(-5px) scale(5);
+  }
+  
+  .object {
+    margin-left: 0px;
+    height: 100px;
+    width: 300px;
+  }
+  
+  .object-3 {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .object-2 {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  .object-1 {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  
+  img {
+    image-rendering: pixelated;
+  }
+  
+  .page-content {
+    height: 937px;
+    width: 1000px;
+  }
+  
+  .introduction {
+    position: absolute;
+    top: 100px; left: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "mnstr-friend";
+    color: white;
+    font-size: 80px;
+    z-index: 25;
+    height: 100px; width: 1000px;
+    animation: intro 5s forwards;
+  }
+  
+  .introduction2 {
+    position: absolute;
+    top: 280px; left: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "dtm_mono";
+    color: white;
+    font-size: 30px;
+    z-index: 25;
+    height: 100px; width: 1000px;
+    animation: desc1 5s forwards;
+  }
+  
+  
+  @keyframes intro {
+    0% {top: 100px; left: 5000px;}
+    5% {top: 100px; left: 100px;}
+    100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
+  }
+  
+  @keyframes desc1 {
+    0% {top: 280px; left: 5000px;}
+    5% {top: 280px; left: 100px;}
+    100% {color: rgba(255, 255, 255, 0); visibility: hidden; animation-play-state: paused;}
+  }
+  
+  
+  
+  iframe {
+    width: 384px;
+    height: 600px;
+    background-color: black;
+    border: 10px white solid;
+    position: absolute;
+  }
+  
 }
